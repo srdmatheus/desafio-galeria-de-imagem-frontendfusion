@@ -1,9 +1,8 @@
+import { useFavoritesPersistence } from "./hooks/use-favorites-persistence";
 import { Providers } from "./providers";
 
 export const App = () => {
-  return (
-    <>
-      <Providers />
-    </>
-  );
+  useFavoritesPersistence();
+
+  return <Providers />;
 };
